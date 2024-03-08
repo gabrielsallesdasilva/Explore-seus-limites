@@ -1,0 +1,277 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root{
+  font-size: 62.5%;
+  --standart-font: "Mulish", sans-serif;
+
+  /*COLORS*/
+  --light-gray:#f9f4fb;
+  --white: #fff;
+  --purple: #312d64;
+  --purple-pinksh: #b52184;
+  --gradient-background: rgba(52,49,147,1);
+}
+
+body{
+  background-color: var(--light-gray);
+  font-family: var(--standart-font);
+}
+
+img{
+  width: 100%;
+}
+
+#capa{
+  padding: 0 3.4rem 9.3rem 3.2rem;
+  width: 100%;
+
+}
+
+.txt-capa{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1{
+  font-size: 3.2rem;
+  line-height: 4rem;
+  font-weight: 900;
+  color: var(--purple-pinksh);
+  margin: 1.7rem 0 0.5rem 0;
+}
+
+#capa p{
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-weight: 600;
+  color: var(--purple);
+  margin-bottom: 3.5rem;
+}
+
+#capa .txt-capa .arrow-button{
+  width: 5.8rem;
+  height: 10.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  border: 4px solid var(--purple-pinksh);
+  border-radius: 76rem;
+}
+
+#capa .txt-capa .arrow-button img{
+  width: 3rem;
+}
+
+#cards{
+  background-color: var(--gradient-background);
+  width: 100%;
+  height: 100%;
+  padding: 5.2rem 3.9rem 5.5rem 3.9rem;
+  display: grid;
+  gap: 4.9rem;
+}
+
+.card{
+  background-color: var(--white);
+  padding: 2.6rem;
+  border-radius: 2rem;
+}
+
+#cards .card img{
+  width: 8rem;
+  margin-bottom: 3.3rem;
+}
+
+#cards .card .txt-card h3{
+  font-size: 2.9rem;
+  line-height: 3.5rem;
+  font-weight: 900;
+  color: var(--purple-pinksh);margin-bottom: 2rem;
+}
+
+#cards .card .txt-card p{
+  font-size: 1.6rem;
+  line-height: 2rem;
+  font-weight: 600;
+  color: var(--purple);
+}
+
+button,
+input,
+fieldset,
+textarea {
+  border: none;
+  background: none;
+  font-family: var(--base-font);
+}
+
+#contato{
+  width: 100%;
+  height: 100%;
+  padding: 7.8rem 3.9rem 6.5rem 4rem;
+}
+
+form h2{
+  font-size: 3.2rem;
+  line-height: 4rem;
+  font-weight: 900;
+  color: var(--purple-pinksh);
+  margin-bottom: 4.3rem;
+}
+
+.input-form{
+  margin-bottom: 2.4rem;
+}
+
+.input-form input, .input-form textarea{
+  width: 100%;
+  border: 0.15rem solid var(--purple);
+  border-radius: 1.6rem;
+  padding: 1.6rem 1.6rem 1.6rem 1.2rem;
+  font-size: 1.6rem;
+  color: var(--purple);
+  font-weight: 600;
+}
+
+.input-form textarea{
+  height: 12.6rem;
+}
+
+#contato form input::placeholder, #contato form textarea::placeholder{
+  color: var(--purple);
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+#contato form input::placeholder {
+  padding-left: 2.8rem;
+}
+
+#nome{
+  background:url(./assets/person.svg) no-repeat scroll 1.4rem 1.2rem;
+}
+
+#email{
+  background: url(/assets/mail.svg) no-repeat scroll 1.4rem 1.2rem;
+}
+
+form button{
+  background-color: var(--gradient-background);
+  color: var(--white);
+  font-size: 1.4rem;
+  line-height: 2rem;
+  font-weight: 700;
+  padding: 1.05rem 1.6rem;
+  border-radius: 1.6rem;
+  cursor: pointer;
+}
+
+footer{
+  background-color: var(--gradient-background);
+  padding: 3.2rem 1.6rem;
+}
+
+footer p{
+  color: var(--white);
+  font-size: 2rem;
+  line-height: 2.4rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+@media(min-width: 1440px){
+
+  #capa{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3rem 10.3rem 10.9rem;
+    max-height: 83.6rem;
+  }
+
+  #capa .txt-capa{
+    order: 1;
+    margin-top: 31.2rem;
+  }
+
+  #capa .img-astronauta{
+    order: 2;
+
+  }
+
+  #capa .txt-capa h1{
+    font-size: 5.8rem;
+    line-height: 7.3rem;
+    margin: 0 0 0.8rem 0;
+  }
+
+  #capa .txt-capa p{
+    font-size: 3.2rem;
+    line-height: 4rem;
+    margin-bottom: 17.9rem;
+  }
+
+  .txt-capa{
+    display: block;
+  }
+
+  #capa .txt-capa .arrow-button{
+    margin: 0;
+    justify-self: flex-end;
+  }
+
+  #cards{
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6rem;
+    padding: 6.4rem 11.1rem;
+  }
+
+  .card{
+    padding: 3.2rem 1.3rem 4.8rem 3.2rem;
+  }
+
+  #cards .card img{
+    width: 9.7rem;
+    margin-bottom: 4rem;
+  }
+
+  .card .txt-card h3{
+    font-size: 3.5rem;
+    line-height: 4rem;
+    margin-bottom: 2.4rem;
+  }
+
+  .card .txt-card p{
+    font-size: 2rem;
+    line-height: 2.5rem;
+
+  }
+
+  #contato{
+    display: flex;
+    align-items: center;
+    gap: 9.2rem;
+    padding: 0;
+    height: 62.2rem;
+    margin: 0 auto;
+    background: url(./assets/stars.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+
+  #contato form {
+    flex: 1;
+    margin-left: 10.9rem;
+  }
+  #contato .stars {
+    flex: 1;
+  }
+}
